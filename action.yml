@@ -2,15 +2,15 @@ name: array-from-object
 author: Arthur Hayrapetyan
 description: Get Array from object with keys of array
 inputs:
-  inputArray:
+  array:
     description: "Keys of Array"
     required: true
     default: ""
-  inputObject:
+  object:
     description: "Object with needed data"
     required: true
     default: ""
-  inputEnvironment:
+  environment:
     description: "String Environment"
     required: true
     default: ""
