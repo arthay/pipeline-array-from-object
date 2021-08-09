@@ -1,33 +1,31 @@
 # pipeline-array-from-object
 
-# Github Split-By Action
-
-Actions splits strings by the given delimiter
+Actions get array from object with keys
 
 ## Inputs
-### `string`
-**required** string to be split
-### `split-by`
-**required** string/char to be used as the delimiter to split the string.
+### `array`
+**required** keys of array
+### `object`
+**required** data of object.
+### `environment`
+**required** string - key.
 
 ## Output
-### value
-Object containing key value pairs
+### outputArray
+Array containing values
 ```json
-{
-    _0: 'first',
-    _1: 'secound'
-}
+["first", "second"]
 ```
 
 ## Example Usage
 
 ```yml
-- uses: rishabhgupta/split-by@v1
-  id: split
-  with:
-    string: 'feat/branch-name'
-    split-by: '/'
+- uses: arthay/pipeline-array-from-object@main
+    id: data
+    with:
+      array: ${{array}}
+      object: ${{objectJson}}
+      environment: 'dev'
 - run: | 
-    echo "${{ steps.split.outputs._1}}"
+    echo "${{ steps.data.outputs.outputArray}}"
   ```
