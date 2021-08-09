@@ -1,0 +1,33 @@
+{
+  "name": "pipeline-array-from-object",
+  "version": "1.0.0",
+  "description": "JavaScript Action Template",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint index.js",
+    "package": "ncc build index.js -o dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arthay/pipeline-array-from-object"
+  },
+  "keywords": [
+    "GitHub",
+    "Actions",
+    "Pipline",
+    "JavaScript"
+  ],
+  "author": "Arthur Hayrapetyan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arthay/pipeline-array-from-object/issues"
+  },
+  "homepage": "https://github.com/arthay/pipeline-array-from-object#readme",
+  "dependencies": {
+    "@actions/core": "^1.1.1"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "^0.20.5",
+    "eslint": "^6.3.0"
+  }
+}
