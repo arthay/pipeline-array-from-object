@@ -1,0 +1,1 @@
+# pipeline-array-from-object
