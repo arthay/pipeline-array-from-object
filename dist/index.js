@@ -133,8 +133,8 @@ const core = __webpack_require__(470);
 
 function run() {
   try {
-    const inputArray = core.getInput('array');
-    const inputObject = core.getInput('object');
+    const inputArray = JSON.parse(core.getInput('array'));
+    const inputObject = JSON.parse(core.getInput('object'));
     const inputEnvironment = core.getInput('environment');
     const output = [];
     const values = [];
