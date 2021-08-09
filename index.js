@@ -24,4 +24,4 @@ function run() {
 
 }
 
-run()
+run();

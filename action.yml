@@ -5,17 +5,17 @@ inputs:
   inputArray:
     description: "Keys of Array"
     required: true
-    default: "[]"
+    default: ""
   inputObject:
     description: "Object with needed data"
     required: true
-    default: "{}"
+    default: ""
   inputEnvironment:
     description: "String Environment"
     required: true
     default: ""
 outputs:
-  value:
+  values:
     description: "Array of strings"
 runs:
   using: node12
