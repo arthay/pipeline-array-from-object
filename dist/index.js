@@ -148,6 +148,7 @@ function run() {
 
     core.setOutput('outputArray', JSON.stringify(output));
     core.setOutput('values', JSON.stringify(values));
+    core.setOutput('inputArray', JSON.stringify(inputArray));
   } catch (err) {
     core.setFailed(err.message);
   }
